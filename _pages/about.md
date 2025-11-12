@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Data automation, visualization, and analytics for public health and global surveillance systems"
 author_profile: true
 redirect_from: 
   - /about/
