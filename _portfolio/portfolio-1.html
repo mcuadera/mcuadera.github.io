@@ -1,0 +1,53 @@
+---
+title: "sirfunctions"
+excerpt: "R package used to use global polio data from WHO, create visualizations, and calculate key performance indicators."
+collection: portfolio
+---
+
+<a href="https://github.com/CDCgov/sirfunctions" target="_blank">
+<img src="/images/sirfunctions-logo.png" alt="sirfunctions R package">
+</a>
+
+<br><br>
+
+<h2>Project overview</h2>
+
+<p>
+The <a href="https://github.com/CDCgov/sirfunctions" target="_blank">sirfunctions</a> package contains key functions used by the Surveillance, Innovation, and Research (SIR) team within the Polio Eradication Branch (PEB) at the Centers for Disease Control and Prevention (CDC). 
+It includes functions to download cleaned global polio data from the World Health Organization (WHO) Polio Information System (POLIS) and geographic files. 
+In addition, the package contains functions to visualize important epidemiological trends and perform key performance indicators such as NPAFP rates, EV rates, and stool adequacy.
+</p>
+
+<p> Nishant Kishore (PhD), was the original lead developer of the package, and I have since taken over maintenance and further development of the package. My contributions include:
+<ul>
+    <li>Adding new functions to calculate additional key performance indicators and visualizations of maps.</li>
+    <li>Adding analytical pipelines to perform desk reviews and KPI reporting.</li>
+    <li>Improving existing visualizations and adding new plotting functions.</li>
+    <li>Streamlining the package to improve code readability and deprecate rarely used functions.</li>
+    <li>Overhauling documentation and vignettes to enhance user understanding while adhering to the tidyverse style guide.</li>
+    <li>Ensuring compatibility with the latest R versions and dependencies.</li>
+    <li>Allow outside collaborators to use functions that were previously availably only to CDC employees due to CDC-specific dependencies.</li>
+    <li>Provide an R interface to access, download, and load data from Azure containers without the need for the Azure Storage Explorer application.</li>
+    <li>Revising code to increase execution speed</li>
+    <li>Create local caching system for downloading global polio data</li>
+</ul>
+</p>
+
+<p>
+The original goal of the package was to streamline and standardize the analysis of global polio surveillance data within CDC. 
+With my contributions, the package has become more user-friendly and accessible to a wider audience, including outside collaborators. 
+The sirfunctions package is now a comprehensive tool for polio surveillance data analysis, visualization, and reporting.
+</p>
+
+<p>
+<strong>NOTE:</strong> <em>Due to the sensitive nature of polio surveillance data, specific examples of visualizations and analyses created using the sirfunctions package cannot be shared publicly.</em>
+</p>
+
+<h3>Technologies Used:</h3>
+<ul>
+    <li>Programming Languages: R</li>
+    <li>Data Visualization: ggplot2, sf</li>
+    <li>Data Manipulation: dplyr, tidyr, purrr, stringr</li>
+    <li>Documentation: roxygen2, devtools, usethis</li>
+    <li>Data access: AzureStor, AzureAuth, Microsoft365R</li>
+</ul>
