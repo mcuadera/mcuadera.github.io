@@ -1,44 +1,53 @@
 ---
 title: "tidypolis"
-excerpt: "R package used to clean global polio data obtained from WHO POLIS."
+excerpt: "R package for cleaning and preparing global polio data from the WHO POLIS system."
 collection: portfolio
 ---
 
-<h2>Project overview</h2>
+<h2>Project Overview</h2> 
+<p> <a href="https://github.com/CDCgov/tidypolis">tidypolis</a> is an R package that streamlines the cleaning, preparation, and management of global polio surveillance data from the WHO Polio Information System (POLIS) API. 
+    It provides tools for downloading data, conducting quality checks, standardizing fields, archiving outputs, and caching data both locally and in Azure storage. Key features include: 
+</p> 
+<ul> 
+    <li>Automated downloading and caching of global polio surveillance data from the POLIS API.</li> 
+    <li>Comprehensive data cleaning functions to standardize variable names, formats, and values.</li> 
+    <li>Built-in data quality checks to identify missing or inconsistent records.</li> 
+    <li>Archival tools to support reliable long-term storage and reproducibility.</li> 
+    <li>Seamless compatibility with Azure storage for cloud-based workflows, including Posit Workbench.</li> 
+    <li>Cleaning and standardization of WHO geodatabases following CDC Surveillance, Innovation, and Research methodologies.</li> 
+</ul> 
+<p> The package enables consistent, transparent, and reproducible workflows for analyzing global polio data. The original lead developer was Nishant Kishore, PhD, with Nicholas Heaghney, MS, serving as primary maintainer until May 2025. 
+    I have since taken over ongoing maintenance and development. 
+</p> 
+
 <p>
-    <a href="https://github.com/CDCgov/tidypolis">tidypolis</a> is an R package designed to streamline the process of cleaning and preparing global polio surveillance data for analysis. 
-    The package provides a set of functions that facilitate downloading global polio data from the WHO Polio Information System (POLIS) API, as well as perform data quality checks, archival, and cleaning. 
-    It also has a caching system that works locally and on Azure storage containers to optimize data retrieval and minimize redundant downloads. Some of the key features of the package include:
-    <ul>
-        <li>Functions to download and cache global polio surveillance data from the POLIS API.</li>
-        <li>Data cleaning functions to standardize variable names, formats, and values.</li>
-        <li>Data quality checks to identify and handle missing or inconsistent data.</li>
-        <li>Functions to archive cleaned data for future reference and reproducibility.</li>
-        <li>Compatibility with Azure storage containers for efficient data management in cloud environments such as Posit Workbench.</li>
-        <li>Cleaning of WHO geodatabase based on methodologies used by the CDC Surveillance, Innovation, and Research team within the Polio Eradication Branch.</li>
-    </ul>
+    <strong>My key contributions include:</strong>
+</p> 
 
-    The tidypolis package provides a standardized and efficient workflow for cleaning global polio surveillance data and also increases transparency and reproducibility in data analysis.
+<ul> 
+    <li>Implementing cloud-compatible authentication and caching systems, enabling the cleaning pipeline to run fully in Posit Workbench and reducing dependence on local compute resources.</li> 
+    <li>Improving documentation and vignettes to enhance usability and adoption.</li> 
+    <li>Refactoring and modularizing code to improve readability, performance, and maintainability.</li> 
+    <li>Resolving breaking changes caused by POLIS API updates.</li> 
+    <li>Strengthening the reliability of case geographic assignment workflows.</li> 
+</ul> 
 
-    Nishant Kishore, PhD, was the original lead developer of the package, and Nicholas Heaghney, MS, was its primary maintainer up until May 2025. Both Nishant and Nick had worked on much of the data cleaning code found in the package. 
-    I have since taken over maintenance and further development of it. My key contributions include:
-    <ul>
-        <li>Implementing the system to work on Posit Workbench.</li>
-        <li>Improving data cleaning functions to handle edge cases and inconsistencies in the data.</li>
-        <li>Enhancing documentation and vignettes to improve user understanding and adoption of the package.</li>
-        <li>Streamlining code to improve readability and performance through modularization.</li>
-    </ul>
+<p>Upon becoming the primary maintainer, I focused on two goals: enabling reliable execution in cloud environments and improving maintainability. 
+    Initially, the cleaning pipeline could not run on Posit Workbench because it relied on local Azure authentication workflows. 
+    I redesigned the authentication system to use a service principal, with credentials stored securely within Posit Workbench. 
+    This eliminated the need for user-based authentication and allowed the entire pipeline to run non-interactively in the cloud.
+</p> 
 
-    When I took over as the primary maintainer, my primary goal was to make sure the package runs more efficiently and be easier to maintain. In particular, I was the project lead for the 
-    modularization effort of the data cleaning script to improve code readability and maintainability, especially for collaborators outside of CDC.
-    This was achieved by breaking down the monolithic cleaning script into smaller, more manageable functions that each perform a specific task. 
-    The modularization effort was done in collaboration with Nicholas Heaghney, MS (CDC), Nishant Kishore,PhD (CDC), and Mohammed Yusuf, PhD (WHO).
-</p>
+<p>To improve maintainability and support external collaboration, I led the modularization of the previously monolithic cleaning script. 
+    This involved breaking the workflow into smaller, well-documented functions that could be reused by partners outside CDC. 
+    This effort was conducted in collaboration with Nicholas Heaghney, MS (CDC), Nishant Kishore, PhD (CDC), and Mohammed Yusuf, PhD (WHO). 
+    The effort has increased transparency, reduced compute requirements, and enabled external analysts to run the same cleaning pipeline used internally at CDC. 
+</p> 
 
-<h3>Technologies Used:</h3>
-<ul>
-    <li>Programming Languages: R</li>
-    <li>Data Manipulation: dplyr, tidyr, purrr, stringr</li>
-    <li>Data access: httr, jsonlite, AzureStor, AzureAuth, Microsoft365R</li>
-    <li>Documentation: roxygen2, devtools, usethis</li>
+<h3>Technologies Used</h3> 
+<ul> 
+    <li><strong>Programming:</strong> R</li> 
+    <li><strong>Data Manipulation:</strong> dplyr, tidyr, purrr, stringr</li> 
+    <li><strong>Data Access:</strong> httr, jsonlite, AzureStor, AzureAuth, Microsoft365R</li> 
+    <li><strong>Documentation:</strong> roxygen2, devtools, usethis</li> 
 </ul>
