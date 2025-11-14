@@ -1,36 +1,44 @@
 ---
-title: "Vector-Borne Disease Dashboard"
-excerpt: "Dashboard showing trends of vector-borne diseases as well as mosquito/tick activity in New Jersey."
+title: "tidypolis"
+excerpt: "R package used to clean global polio data obtained from WHO POLIS."
 collection: portfolio
 ---
 
-<a href="https://www.nj.gov/health/cd/topics/vector_borne_disease_data_dashboard.shtml" target="_blank">
-<img src="/images/njdoh-vbd-dashboard.png" alt="Vector-Borne Disease Dashboard">
-</a>
-
-<br><br>
-
 <h2>Project overview</h2>
+<p>
+    <a href="https://github.com/CDCgov/tidypolis">tidypolis</a> is an R package designed to streamline the process of cleaning and preparing global polio surveillance data for analysis. 
+    The package provides a set of functions that facilitate downloading global polio data from the WHO Polio Information System (POLIS) API, as well as perform data quality checks, archival, and cleaning. 
+    It also has a caching system that works locally and on Azure storage containers to optimize data retrieval and minimize redundant downloads. Some of the key features of the package include:
+    <ul>
+        <li>Functions to download and cache global polio surveillance data from the POLIS API.</li>
+        <li>Data cleaning functions to standardize variable names, formats, and values.</li>
+        <li>Data quality checks to identify and handle missing or inconsistent data.</li>
+        <li>Functions to archive cleaned data for future reference and reproducibility.</li>
+        <li>Compatibility with Azure storage containers for efficient data management in cloud environments such as Posit Workbench.</li>
+        <li>Cleaning of WHO geodatabase based on methodologies used by the CDC Surveillance, Innovation, and Research team within the Polio Eradication Branch.</li>
+    </ul>
 
-I led the development of a comprehensive dashboard to monitor and analyze trends in vector-borne diseases, specifically focusing on mosquito and tick activity in New Jersey. 
-The dashboard integrates data from various sources, including public health records, syndromic surveillance data, and vector surveillance systems.
-It features interactive visualizations that allow users to explore disease incidence rates, seasonal patterns, and geographic distribution of vector populations. Key functionalities include:
-<ul>
-    <li>Real-time data updates to reflect the latest surveillance information.</li>
-    <li>Heatmaps to visualize areas with high vector activity and disease incidence.</li>
-    <li>Trend analysis tools to identify emerging patterns and potential outbreaks.</li>
-    <li>User-friendly interface for public health officials and researchers to access and interpret data easily.</li>
-</ul>
+    The tidypolis package provides a standardized and efficient workflow for cleaning global polio surveillance data and also increases transparency and reproducibility in data analysis.
 
-The project involved collaboration with epidemiologists, vector control staff, and data analysts to ensure the dashboard met the needs of its users. 
-The end result is a powerful tool that aids in the early detection and response to vector-borne disease threats, ultimately contributing to improved public health outcomes in New Jersey.
+    Nishant Kishore, PhD, was the original lead developer of the package, and Nicholas Heaghney, MS, was its primary maintainer up until May 2025. Both Nishant and Nick had worked on much of the data cleaning code found in the package. 
+    I have since taken over maintenance and further development of it. My key contributions include:
+    <ul>
+        <li>Implementing the system to work on Posit Workbench.</li>
+        <li>Improving data cleaning functions to handle edge cases and inconsistencies in the data.</li>
+        <li>Enhancing documentation and vignettes to improve user understanding and adoption of the package.</li>
+        <li>Streamlining code to improve readability and performance through modularization.</li>
+    </ul>
 
-The dashboard can be accessed <a href = "https://www.nj.gov/health/cd/topics/vector_borne_disease_data_dashboard.shtml" target="_blank">here</a> or by clicking the image above.
+    When I took over as the primary maintainer, my primary goal was to make sure the package runs more efficiently and be easier to maintain. In particular, I was the project lead for the 
+    modularization effort of the data cleaning script to improve code readability and maintainability, especially for collaborators outside of CDC.
+    This was achieved by breaking down the monolithic cleaning script into smaller, more manageable functions that each perform a specific task. 
+    The modularization effort was done in collaboration with Nicholas Heaghney, MS (CDC), Nishant Kishore,PhD (CDC), and Mohammed Yusuf, PhD (WHO).
+</p>
 
 <h3>Technologies Used:</h3>
 <ul>
     <li>Programming Languages: R</li>
-    <li>Data Visualization: Tableau (Server)</li>
-    <li>Data Cleaning: Tableau Prep</li>
+    <li>Data Manipulation: dplyr, tidyr, purrr, stringr</li>
+    <li>Data access: httr, jsonlite, AzureStor, AzureAuth, Microsoft365R</li>
+    <li>Documentation: roxygen2, devtools, usethis</li>
 </ul>
-
