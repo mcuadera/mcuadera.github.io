@@ -1,67 +1,41 @@
 ---
 title: "rdcAVS"
-excerpt: "App to assist in setting up and monitoring vaccination campaigns in the Democratic Republic of the Congo."
+excerpt: "Shiny app to automate setup and monitor vaccination campaigns in the Democratic Republic of the Congo."
 collection: portfolio
 ---
 
 <a href="https://github.com/CDCgov/rdcAVS" target="_blank">
-<img src="/images/rdcAVS-logo.png" alt="rdcAVS application" style="width: 100px;">
+    <img src="/images/rdcAVS-logo.png" alt="rdcAVS application" style="width: 100px;">
 </a>
 
-<h2>Project Overview</h2>
+<h2>Project Summary</h2>
 <p>
-The <a href="https://github.com/CDCgov/rdcAVS">rdcAVS</a> package is an R Shiny application designed to assist in automating much of the work that goes 
-into setting up the data collection system of vaccination campaigns in the Democratic Republic of the Congo (DRC). I also made it so it can be readily deployed as a web application,
-which you can view an example of <a href="https://mcuadera.shinyapps.</p>io/rdcAVS/" target="_blank">here</a>. 
+rdcAVS is an R Shiny app that automates the setup of Google Sheets-based data collection and provides real-time monitoring for vaccination campaigns in the Democratic Republic of the Congo. View the source on <a href="https://github.com/CDCgov/rdcAVS" target="_blank">GitHub</a> or try a demo <a href="https://mcuadera.shinyapps.io/rdcAVS/" target="_blank">here</a>.
 </p>
 
-<p>
-DRC already has a well-established system for collecting vaccination data during campaigns, which meant that the app needed to
-balance automation with flexibility to accommodate existing workflows and data structures. The original system relied
-heavily on Google Sheets, with data being entered directly into sheets by field teams during campaigns. 
-
-The use of Google Sheets, as well as using its offline capabilities, allowed field teams to continue collecting data even in areas with limited internet connectivity.
-However, the data collection sheet was complex and required significant manual setup before each campaign. A sheet 
-may have as much as 200 columns, which meant that it was hard to perform data quality checks in real time and also 
-monitor the campaigns as it happened. Instead, the quality of the campaign can only be assessed after the campaign was over, which limited the ability to make adjustments during the campaign itself.
+<h3>Problem & Solution</h3>
+<p></p>
+Campaign data collection relied on complex Google Sheets (often hundreds of columns) and manual setup, making real-time quality checks difficult. rdcAVS streamlines sheet creation, permissions, and aggregation, enabling faster deployment and live data quality monitoring so teams can act during a campaign rather than after.
 </p>
 
-<p>
-The rdcAVS app automates much of the setup process for these Google Sheets, reducing the time and effort required to prepare for a campaign. 
-It also includes features for monitoring the progress of vaccination campaigns in real time, allowing for better quality assurance on data quality being entered as well as 
-faster identification of areas that may need additional support during the campaign.
-
-The key feature of the app is its ability to integrate with Google Sheets and be compatible with existing data 
-collection workflows in DRC, reducing the learning curve for field teams and ensuring a smooth transition to using the app. 
-It allows users to easily authenticate with their Google account and create or update the necessary sheets for data collection, including managing
-of permissions. DRC is a huge country, with data collection during national campaigns often involving multiple hundreds of 
-data managers and supervisors, which means that managing permissions for all these users can be a daunting task.
-</p>
-
-<p>
-There are four main modules in the app:
+<h3>Key Features</h3>
 <ul>
-    <li><strong>Management of geographic database:</strong> In order to ensure consistency in data collection, 
-        the app relies on a standardized geographic database so that data collection sheets as well as permissions are set up correctly.
-    </li>
-    <li><strong>Campaign creation:</strong> Automates the creation and configuration of the folder hierarchy in Google Sheets for data collection, as 
-        well as the creation of the data collection sheet. The app also automatically creates summary sheets by collating data sheets from lower geographic levels, from the district to the national level.</li>
-    <li><strong>Permission Management:</strong> Simplifies the process of managing user permissions for Google Sheets, allowing administrators to easily add users and set appropriate access levels.</li>
-    <li><strong>Surveillance and Data Quality Monitoring:</strong> Provides real-time monitoring of data quality during vaccination campaigns, with visualizations and alerts to help identify potential issues.
-    In addition, provides visuals for tracking the progress of vaccination campaigns, presenting metrics important for monitoring campaign progress and identifying sites that require additional assistance.</li>
+    <li><strong>Google Sheets integration:</strong> Automated creation and configuration of campaign folders and sheets; handles permissions and summaries across geographic levels.</li>
+    <li><strong>Geographic database:</strong> Standardized geo data to ensure consistent sheet structure and accurate aggregation.</li>
+    <li><strong>Permission management:</strong> Bulk user and role management to simplify access for hundreds of data managers and supervisors.</li>
+    <li><strong>Real-time surveillance & data quality:</strong> Dashboards, alerts, and visuals to track progress and surface data issues during campaigns.</li>
+    <li><strong>Deployable:</strong> Designed for easy web deployment and compatibility with existing field workflows (including offline-friendly Google Sheets use).</li>
 </ul>
-</p>
 
 <p>
-With the rdcAVS app, the process of setting up and monitoring vaccination campaigns in DRC has become significantly more efficient and effective. 
-By automating key tasks and providing real-time insights into campaign progress, the app has helped to improve data quality and ensure that vaccination efforts are reaching those who need them most.
-I am the primary developer of the application and managed its conception, design, and implementation, working closely with stakeholders in DRC to ensure that the app met their needs and requirements.
+I was the primary developer responsible for design and implementation, working with stakeholders in DRC to ensure the app matched operational needs.
 </p>
 
-<h3>Technologies Used</h3>
+<h3>Technologies & Skills</h3>
 <ul>
-    <li><strong>Programming:</strong> R, Shiny</li>
-    <li><strong>Data Manipulation:</strong> dplyr, tidyr, stringr, lubridate</li>
-    <li><strong>Google Sheets Integration:</strong> googlesheets4, googledrive</li>
-    <li><strong>Visualization:</strong> ggplot2, bslib</li>
+    <li><strong>Languages & frameworks:</strong> R, Shiny</li>
+    <li><strong>Data:</strong> dplyr, tidyr, stringr, lubridate</li>
+    <li><strong>Google integration:</strong> googlesheets4, googledrive</li>
+    <li><strong>Visualization & UI:</strong> ggplot2, bslib</li>
+    <li><strong>Experience:</strong> app design, deployment, stakeholder-driven requirements, and large-scale permission workflows</li>
 </ul>
