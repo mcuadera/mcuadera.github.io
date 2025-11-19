@@ -20,4 +20,4 @@ This is my version of a mood tracker. The greener it is, the closer I am to need
 
 <a href = "https://github.com/mcuadera" target = "_blank" title = "Mervin's GitHub page"> <img src="https://ghchart.rshah.org/mcuadera" alt="mcuadera's Github chart" /> </a>
 
-<h6><em>Click the chart to go to my GitHub page</em></h6>
+<h6><em>Click the chart to see my code contributions on my GitHub page</em></h6>
