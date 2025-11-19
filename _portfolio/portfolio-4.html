@@ -1,41 +1,36 @@
 ---
-title: "rdcAVS"
-excerpt: "Shiny app to automate setup and monitor vaccination campaigns in the Democratic Republic of the Congo."
+title: "Vector-Borne Disease Dashboard"
+excerpt: "Dashboard showing trends of vector-borne diseases as well as mosquito/tick activity in New Jersey."
 collection: portfolio
 ---
 
-<a href="https://github.com/CDCgov/rdcAVS" target="_blank">
-    <img src="/images/rdcAVS-logo.png" alt="rdcAVS application" style="width: 100px;">
+<a href="https://www.nj.gov/health/cd/topics/vector_borne_disease_data_dashboard.shtml" target="_blank">
+<img src="/images/njdoh-vbd-dashboard.png" alt="Vector-Borne Disease Dashboard">
 </a>
 
-<h2>Project Summary</h2>
-<p>
-rdcAVS is an R Shiny app that automates the setup of Google Sheets-based data collection and provides real-time monitoring for vaccination campaigns in the Democratic Republic of the Congo. View the source on <a href="https://github.com/CDCgov/rdcAVS" target="_blank">GitHub</a> or try a demo <a href="https://mcuadera.shinyapps.io/rdcAVS/" target="_blank">here</a>.
-</p>
+<br><br>
 
-<h3>Problem & Solution</h3>
-<p></p>
-Campaign data collection relied on complex Google Sheets (often hundreds of columns) and manual setup, making real-time quality checks difficult. rdcAVS streamlines sheet creation, permissions, and aggregation, enabling faster deployment and live data quality monitoring so teams can act during a campaign rather than after.
-</p>
+<h2>Project overview</h2>
 
-<h3>Key Features</h3>
+I led the development of a comprehensive dashboard to monitor and analyze trends in vector-borne diseases, specifically focusing on mosquito and tick activity in New Jersey. 
+The dashboard integrates data from various sources, including public health records, syndromic surveillance data, and vector surveillance systems.
+It features interactive visualizations that allow users to explore disease incidence rates, seasonal patterns, and geographic distribution of vector populations. Key functionalities include:
 <ul>
-    <li><strong>Google Sheets integration:</strong> Automated creation and configuration of campaign folders and sheets; handles permissions and summaries across geographic levels.</li>
-    <li><strong>Geographic database:</strong> Standardized geo data to ensure consistent sheet structure and accurate aggregation.</li>
-    <li><strong>Permission management:</strong> Bulk user and role management to simplify access for hundreds of data managers and supervisors.</li>
-    <li><strong>Real-time surveillance & data quality:</strong> Dashboards, alerts, and visuals to track progress and surface data issues during campaigns.</li>
-    <li><strong>Deployable:</strong> Designed for easy web deployment and compatibility with existing field workflows (including offline-friendly Google Sheets use).</li>
+    <li>Real-time data updates to reflect the latest surveillance information.</li>
+    <li>Heatmaps to visualize areas with high vector activity and disease incidence.</li>
+    <li>Trend analysis tools to identify emerging patterns and potential outbreaks.</li>
+    <li>User-friendly interface for public health officials and researchers to access and interpret data easily.</li>
 </ul>
 
-<p>
-I was the primary developer responsible for design and implementation, working with stakeholders in DRC to ensure the app matched operational needs.
-</p>
+The project involved collaboration with epidemiologists, vector control staff, and data analysts to ensure the dashboard met the needs of its users. 
+The end result is a powerful tool that aids in the early detection and response to vector-borne disease threats, ultimately contributing to improved public health outcomes in New Jersey.
 
-<h3>Technologies & Skills</h3>
+The dashboard can be accessed <a href = "https://www.nj.gov/health/cd/topics/vector_borne_disease_data_dashboard.shtml" target="_blank">here</a> or by clicking the image above.
+
+<h3>Technologies Used:</h3>
 <ul>
-    <li><strong>Languages & frameworks:</strong> R, Shiny</li>
-    <li><strong>Data:</strong> dplyr, tidyr, stringr, lubridate</li>
-    <li><strong>Google integration:</strong> googlesheets4, googledrive</li>
-    <li><strong>Visualization & UI:</strong> ggplot2, bslib</li>
-    <li><strong>Experience:</strong> app design, deployment, stakeholder-driven requirements, and large-scale permission workflows</li>
+    <li>Programming Languages: R</li>
+    <li>Data Visualization: Tableau (Server)</li>
+    <li>Data Cleaning: Tableau Prep</li>
 </ul>
+
