@@ -11,18 +11,22 @@ redirect_from:
 
 Work experience
 ======
+**Data Scientist**, *Commander, Navy Installations Command* — *Washington, DC*  
+**Apr 2026 – Present**
+- Analyze historical data to create model for predicting future requirements within N3 programs.
+
 **Data Scientist**, *Centers for Disease Control and Prevention (CDC)* — *Atlanta, GA*  
-**Feb 2024 – Present**  
-- Leads development of advanced R-based analytic pipelines and functions to summarize and visualize global polio surveillance data.  
-- Leads working groups with WHO/CDC epidemiologists to manage and execute global surveillance projects.  
-- Optimizes key performance indicator code and streamlines data review processes through standardized analytic functions and version control.  
-- Migrates local analysis workflows to the cloud, automating ETL processes and leveraging Apache Spark and Databricks for big data analytics.  
-- Serves as lead developer in the Democratic Republic of Congo, automating immunization campaign setup and data management for the Ministry of Health.  
-- Conducts systematic reviews of polio eradication performance across multiple countries and provides technical support for analytic code.  
-- Performs software quality assurance testing, implements enhancements via GitHub, and conducts code reviews.  
-- Ensures data accuracy through extensive QA on case counts, GIS files, and vaccine coverage data.  
-- Develops documentation, R packages, and training materials, and presents new tools to CDC teams.  
-- Applies Agile methodology using Jira and GitHub Projects.
+**Feb 2024 – Apr 2026**  
+- Led development of advanced R-based analytic pipelines and functions to summarize and visualize global polio surveillance data.  
+- Led working groups with WHO/CDC epidemiologists to manage and execute global surveillance projects.  
+- Optimized key performance indicator code and streamlines data review processes through standardized analytic functions and version control.  
+- Migrated local analysis workflows to the cloud, automating ETL processes and leveraging Apache Spark and Databricks for big data analytics.  
+- Served as lead developer in the Democratic Republic of Congo, automating immunization campaign setup and data management for the Ministry of Health.  
+- Conducted systematic reviews of polio eradication performance across multiple countries and provides technical support for analytic code.  
+- Performed software quality assurance testing, implements enhancements via GitHub, and conducts code reviews.  
+- Ensured data accuracy through extensive QA on case counts, GIS files, and vaccine coverage data.  
+- Developed documentation, R packages, and training materials, and presents new tools to CDC teams.  
+- Applied Agile methodology using Jira and GitHub Projects.
 
 **Epidemiologist**, *New Jersey Department of Health* — *Trenton, NJ*  
 **Jun 2021 – Sep 2023**  
